@@ -1,10 +1,29 @@
-
-function ReusableHTML (){
-    return <div>
-        <h1>Hi, welcome back</h1>
-        <h2>this is a custom html component</h2>
-        <h3>A reusable pice of html code</h3>
-    </div>
+function NavBar() {
+  return (
+    <nav>
+      <h1>Navbar</h1>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </nav>
+  );
 }
 
-ReactDOM.render(<ReusableHTML/>, document.querySelector("#root"))
+var root = document.getElementById("root");
+ReactDOM.render(<NavBar />, root);
+
+const NavBarJSX = (
+  <nav>
+    <h1>Navbar JSX</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </nav>
+);
+
+var root = document.getElementById("root");
+ReactDOM.render(NavBarJSX, root);
