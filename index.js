@@ -12,19 +12,29 @@ var StaticPage = () => (
 );
 
 const NavBar = () => (
-  <nav>
-    <img src="./React-icon.svg.png" width = "30"/>
+  <nav className="nav-bar">
+    <img className="logo" src="./React-icon.svg.png"  />
     <h1>React</h1>
-    <ul>
+    <ul className="nav-items">
       <li>React Course - Project 1</li>
+      <li>Pricing</li>
+      <li>About</li>
+      <li>Contact</li>
     </ul>
   </nav>
+);
+
+const Footer = () => (
+  <footer>
+    <p>2022 JJAHEMDAMER Development. All Rights Reserved</p>
+  </footer>
 );
 
 const App = () => (
   <div>
     <NavBar />
     <StaticPage />
+    <Footer/>
   </div>
 );
 
