@@ -1,29 +1,31 @@
-function NavBar() {
-  return (
-    <nav>
-      <h1>Navbar</h1>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-    </nav>
-  );
-}
-
-var root = document.getElementById("root");
-ReactDOM.render(<NavBar />, root);
-
-const NavBarJSX = (
-  <nav>
-    <h1>Navbar JSX</h1>
+var StaticPage = () => (
+  <div>
+    <h1>Fun facts about React</h1>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
+      <li>Was First released in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has Well Over 100k stars on git hub</li>
+      <li>Is maintained by facebook</li>
+      <li>Powers thousands of apps</li>
+    </ul>
+  </div>
+);
+
+const NavBar = () => (
+  <nav>
+    <h1>React</h1>
+    <ul>
+      <li>React Course - Project 1</li>
     </ul>
   </nav>
 );
 
+const App = () => (
+  <div>
+    <NavBar />
+    <StaticPage />
+  </div>
+);
+
 var root = document.getElementById("root");
-ReactDOM.render(NavBarJSX, root);
+ReactDOM.render(<App />, root);
