@@ -13,7 +13,7 @@ var StaticPage = () => (
 
 const NavBar = () => (
   <nav className="nav-bar">
-    <img className="logo" src="./React-icon.svg.png"  />
+    <img className="logo" src="./React-icon.png"  />
     <h1>React</h1>
     <ul className="nav-items">
       <li>React Course - Project 1</li>
