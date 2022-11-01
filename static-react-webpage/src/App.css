@@ -1,0 +1,67 @@
+:root {
+    --blue: rgba(97, 218, 251, 1);
+    --grey: rgba(40, 45, 53, 1);
+    --navy: rgba(33, 34, 42, 1);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--grey);
+    color: aliceblue;
+    font-family: 'Inter';
+    font-weight: 600;
+
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px 0 rgb(18, 18, 18);
+    background-color: var(--navy);
+}
+
+.NavBar>.react {
+    display: flex;
+    color: var(--blue);
+    align-items: center;
+}
+
+.NavBar>ul {
+    list-style: none;
+    display: flex;
+}
+
+.NavBar>ul>li {
+    margin: 10px;
+}
+
+.main-part {
+    margin: 35px;
+}
+
+.main-part>ul>li {
+    list-style: none;
+    margin: 2px;
+    font-size: 18px;
+}
+
+.main-part>ul>li::before {
+    content: "\2022";
+    color: var(--blue);
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: var(--navy);
+    font-weight: 700;
+}
